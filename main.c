@@ -211,9 +211,9 @@ int DoWork(DWORD argc, PCTSTR argv[])
    Log(TEXT("[.] Starting work"));
    do
    {
+      // Actual work goes here
       UNREFERENCED_PARAMETER(argc);
       UNREFERENCED_PARAMETER(argv);
-
       Sleep(1000);
       if (IsShutdownRequested())
          break;
